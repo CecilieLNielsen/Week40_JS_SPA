@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main">
+    <h1>Fetch and promises</h1>
+    <br>
+    <div id="1">
+      <h3>Exercise 1: Show all users</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div id="2">
+      <h3>Exercise 2: Show a single user</h3>
+      <form action="#">
+        <label for="userId">Write an id: </label>
+        <input type="text" id="inputId">
+        <button type="button" id="fetchUserBtn" class="btn btn-light">Get user</button>
+      </form>
+      <p id="singleUser"></p>
+    </div>
+    <br>
+    <div id="3">
+      <h3>Exercise 3: Add a new user</h3>
+      <form action="#">
+        <label for="userName">Name: </label>
+        <input type="text" id="userName">
+        <br>
+        <label for="userAge">Age: </label>
+        <input type="number" id="userAge">
+        <br>
+        <label for="userGender">Gender: </label>
+        <input type="text" id="userGender">
+        <br>
+        <label for="userEmail">Email: </label>
+        <input type="text" id="userEmail">
+        <br>
+        <button type="button" id="addUserBtn" class="btn btn-light">Add user</button>
+      </form>
+    </div>
+    <br>
+    <div id="4">
+      <h3>Exercise 4: Edit an existing user</h3>
+      <form action="#">
+        <label for="editId">Id: </label>
+        <input type="number" id="editId">
+        <br>
+        <label for="userName">Name: </label>
+        <input type="text" id="editName">
+        <br>
+        <label for="userAge">Age: </label>
+        <input type="number" id="editAge">
+        <br>
+        <label for="userGender">Gender: </label>
+        <input type="text" id="editGender">
+        <br>
+        <label for="userEmail">Email: </label>
+        <input type="text" id="editEmail">
+        <br>
+        <button type="button" id="editUserBtn" class="btn btn-light">Edit user</button>
+      </form>
+    </div>
+    <br>
+    <div id="5">
+      <h3>Exercise 5: Delete an existing user</h3>
+      <form action="#">
+        <label for="deleteUserId">Write an id: </label>
+        <input type="number" id="deleteId">
+        <button type="button" id="deleteUserBtn" class="btn btn-light">Delete user</button>
+      </form>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
